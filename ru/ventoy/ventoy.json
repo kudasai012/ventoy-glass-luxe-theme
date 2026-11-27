@@ -1,0 +1,87 @@
+{
+    "control": [
+        { "VTOY_MENU_LANGUAGE": "ru_RU" },
+        { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
+        { "VTOY_BIOS_MODE_STR": "UEFI x64" }
+    ],
+    "control_legacy": [
+        { "VTOY_MENU_LANGUAGE": "ru_RU" },
+        { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
+        { "VTOY_BIOS_MODE_STR": "Legacy BIOS" }
+    ],
+    "control_uefi": [
+        { "VTOY_MENU_LANGUAGE": "ru_RU" },
+        { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
+        { "VTOY_BIOS_MODE_STR": "UEFI x64" }
+    ],
+    "control_ia32": [
+        { "VTOY_MENU_LANGUAGE": "ru_RU" },
+        { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
+        { "VTOY_BIOS_MODE_STR": "UEFI IA32" }
+    ],
+    "control_aa64": [
+        { "VTOY_MENU_LANGUAGE": "ru_RU" },
+        { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
+        { "VTOY_BIOS_MODE_STR": "UEFI ARM64" }
+    ],
+    "theme": {
+        "file": "/ventoy/theme/theme.txt",
+        "gfxmode": "1024x768",
+        "display_mode": "GUI",
+        "ventoy_left": "2000",
+        "ventoy_top": "2000",
+        "ventoy_color": "#00000000",
+        "fonts": [
+            "/ventoy/theme/fonts/electrolize_12.pf2",
+            "/ventoy/theme/fonts/electrolize_14.pf2",
+            "/ventoy/theme/fonts/electrolize_16.pf2"
+        ]
+    },
+    "menu_class": [
+        { "key": "Win11", "class": "win11" },
+        { "key": "win11", "class": "win11" },
+        { "key": "Windows 11", "class": "win11" },
+        { "key": "Windows_11", "class": "win11" },
+        { "key": "Windows11", "class": "win11" },
+        { "key": "Win10", "class": "win10" },
+        { "key": "win10", "class": "win10" },
+        { "key": "Windows 10", "class": "win10" },
+        { "key": "Windows_10", "class": "win10" },
+        { "key": "Windows10", "class": "win10" },
+        { "key": "Windows", "class": "windows" },
+        { "key": "windows", "class": "windows" },
+        { "key": "HBCD_PE", "class": "winpe" },
+        { "key": "Hiren", "class": "winpe" },
+        { "key": "10PE", "class": "winpe" },
+        { "key": "11PE", "class": "winpe" },
+        { "key": "WinPE", "class": "winpe" },
+        { "key": "winpe", "class": "winpe" },
+        { "key": "Strelec", "class": "winpe" },
+        { "key": "strelec", "class": "winpe" },
+        { "key": "comodo", "class": "comodo" },
+        { "key": "Comodo", "class": "comodo" },
+        { "key": "Kaspersky", "class": "antivirus" },
+        { "key": "DrWeb", "class": "antivirus" },
+        { "key": "Antivirus", "class": "antivirus" },
+        { "key": "memtest", "class": "memtest" },
+        { "key": "MemTest", "class": "memtest" },
+        { "key": "Memtest", "class": "memtest" },
+        { "key": "Ubuntu", "class": "ubuntu" },
+        { "key": "ubuntu", "class": "ubuntu" },
+        { "key": "Debian", "class": "debian" },
+        { "key": "debian", "class": "debian" },
+        { "key": "Fedora", "class": "fedora" },
+        { "key": "fedora", "class": "fedora" },
+        { "key": "Mint", "class": "mint" },
+        { "key": "mint", "class": "mint" },
+        { "key": "Arch", "class": "arch" },
+        { "key": "arch", "class": "arch" },
+        { "key": "Manjaro", "class": "manjaro" },
+        { "key": "Kali", "class": "kali" },
+        { "key": "kali", "class": "kali" },
+        { "key": "Clonezilla", "class": "rescue" },
+        { "key": "GParted", "class": "rescue" },
+        { "key": "Rescue", "class": "rescue" },
+        { "key": "rescue", "class": "rescue" }
+    ]
+}

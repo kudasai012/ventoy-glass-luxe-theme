@@ -1,0 +1,194 @@
+ventoy_left_top_color:"@2000@2000@black@"
+# Font: Electrolize (svlv/grub-themes startrek-red family)
+
+title-text: ""
+desktop-image: "background.jpg"
+desktop-color: "#060911"
+
+terminal-font: "Electrolize Regular 14"
+terminal-left: "56"
+terminal-top: "98"
+terminal-width: "912"
+terminal-height: "634"
+
+# ---- TOP FRAMELESS HEADER: PROMPT (LEFT) + MOTHERBOARD RTC CLOCK (RIGHT) ----
++ label {
+  left = 74
+  top = 40
+  width = 482
+  height = 25
+  text = "Please select an operating system"
+  color = "#f8fafc"
+  font = "Electrolize Regular 16"
+  align = "left"
+}
+
+# Dynamic mode indicator (only visible when Memdisk / WIMBOOT / GRUB2 / Raw is toggled)
++ label {
+  left = 564
+  top = 43
+  width = 143
+  height = 18
+  text = "@VTOY_MEM_DISK@"
+  color = "#6ee7b7"
+  font = "Electrolize Regular 12"
+  align = "right"
+}
+
++ label {
+  left = 564
+  top = 43
+  width = 143
+  height = 18
+  text = "@VTOY_WIMBOOT_MODE@"
+  color = "#6ee7b7"
+  font = "Electrolize Regular 12"
+  align = "right"
+}
+
++ label {
+  left = 564
+  top = 43
+  width = 143
+  height = 18
+  text = "@VTOY_GRUB2_MODE@"
+  color = "#6ee7b7"
+  font = "Electrolize Regular 12"
+  align = "right"
+}
+
+# Реальные дата/время с RTC материнской платы (GRUB datehook + первая строка темы)
++ label {
+  left = 722
+  top = 40
+  width = 246
+  height = 25
+  text = "@@GL_CLK"
+  color = "#94a3b8"
+  font = "Electrolize Regular 16"
+  align = "right"
+}
+
+# ---- FRAMELESS BOOT MENU (PURE BORDERLESS ICONS, NO OUTER WINDOW CARD) ----
++ boot_menu {
+  left = 56
+  top = 110
+  width = 632
+  height = 584
+
+  item_font = "Electrolize Regular 16"
+  item_color = "#cbd5e1"
+  selected_item_font = "Electrolize Regular 16"
+  selected_item_color = "#ffffff"
+
+  item_height = 34
+  item_padding = 2
+  item_icon_space = 14
+  item_spacing = 12
+  icon_width = 26
+  icon_height = 26
+
+  menu_pixmap_style = "menu_*.png"
+  item_pixmap_style = "item_*.png"
+  selected_item_pixmap_style = "select_*.png"
+
+  scrollbar = true
+  scrollbar_width = 4
+  scrollbar_frame = "sframe_*.png"
+  scrollbar_thumb = "slider_*.png"
+}
+
+# ---- MINIMALIST FRAMELESS NAVIGATION SHORTCUTS ----
++ label {
+  left = 728
+  top = 124
+  width = 190
+  height = 21
+  text = "Select image"
+  color = "#f8fafc"
+  font = "Electrolize Regular 14"
+  align = "left"
+}
++ label {
+  left = 728
+  top = 164
+  width = 190
+  height = 21
+  text = "Browse drives"
+  color = "#cbd5e1"
+  font = "Electrolize Regular 14"
+  align = "left"
+}
++ label {
+  left = 926
+  top = 165
+  width = 42
+  height = 18
+  text = "F2"
+  color = "#cbd5e1"
+  font = "Electrolize Regular 12"
+  align = "center"
+}
++ label {
+  left = 728
+  top = 204
+  width = 190
+  height = 21
+  text = "Folder tree"
+  color = "#cbd5e1"
+  font = "Electrolize Regular 14"
+  align = "left"
+}
++ label {
+  left = 926
+  top = 205
+  width = 42
+  height = 18
+  text = "F3"
+  color = "#cbd5e1"
+  font = "Electrolize Regular 12"
+  align = "center"
+}
++ label {
+  left = 728
+  top = 244
+  width = 190
+  height = 21
+  text = "Terminal"
+  color = "#cbd5e1"
+  font = "Electrolize Regular 14"
+  align = "left"
+}
++ label {
+  left = 926
+  top = 245
+  width = 42
+  height = 18
+  text = "C"
+  color = "#cbd5e1"
+  font = "Electrolize Regular 12"
+  align = "center"
+}
+
+# ---- SUBTLE BOOT MODE READOUT (NO RESOLUTION STATUS) ----
++ label {
+  left = 728
+  top = 312
+  width = 124
+  height = 21
+  text = "Boot mode"
+  color = "#64748b"
+  font = "Electrolize Regular 14"
+  align = "left"
+}
+
++ label {
+  left = 852
+  top = 313
+  width = 116
+  height = 18
+  text = "@@VTOY_BIOS_MODE_STR"
+  color = "#7dd3fc"
+  font = "Electrolize Regular 12"
+  align = "right"
+}
