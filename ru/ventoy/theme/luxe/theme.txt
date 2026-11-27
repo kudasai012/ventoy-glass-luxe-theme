@@ -1,0 +1,362 @@
+# Ventoy 1024x768 Pixel-Exact Theme — Dark Minimal Glass Luxe v3 (RU)
+# Verified 1:1 against Ventoy 1.1.18 + GRUB2 2.04 gfxmenu source
+
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#070b13"
+
+terminal-font: "InterMed Regular 13"
+terminal-left: "48"
+terminal-top: "40"
+terminal-width: "928"
+terminal-height: "688"
+
+# ---- TOP FROSTED CAPSULE (x=48..976, y=26..78, vertical center y=52) ----
+# Clean header without duplicate BIOS/resolution capsule!
++ label {
+  left = 84
+  top = 40
+  width = 96
+  height = 24
+  text = "VENTOY"
+  color = "#f8fafc"
+  font = "InterBold Bold 18"
+  align = "left"
+}
+
++ label {
+  left = 202
+  top = 43
+  width = 360
+  height = 20
+  text = "МУЛЬТИЗАГРУЗОЧНЫЙ НАКОПИТЕЛЬ"
+  color = "#94a3b8"
+  font = "InterMed Regular 13"
+  align = "left"
+}
+
+# Separate Ventoy mode badges aligned cleanly to the right side of the header
+# (appear dynamically when `Ctrl+D` / `Ctrl+I` / `Ctrl+R` / `Ctrl+W` are toggled; right edge aligns to x=956!)
++ label {
+  left = 556
+  top = 44
+  width = 110
+  height = 18
+  text = "@VTOY_WIMBOOT_MODE@"
+  color = "#6ee7b7"
+  font = "InterBold Bold 12"
+  align = "right"
+}
+
++ label {
+  left = 674
+  top = 44
+  width = 98
+  height = 18
+  text = "@VTOY_ISO_RAW@"
+  color = "#6ee7b7"
+  font = "InterBold Bold 12"
+  align = "right"
+}
+
++ label {
+  left = 780
+  top = 44
+  width = 86
+  height = 18
+  text = "@VTOY_GRUB2_MODE@"
+  color = "#6ee7b7"
+  font = "InterBold Bold 12"
+  align = "right"
+}
+
++ label {
+  left = 872
+  top = 44
+  width = 84
+  height = 18
+  text = "@VTOY_MEM_DISK@"
+  color = "#6ee7b7"
+  font = "InterBold Bold 12"
+  align = "right"
+}
+
+# ---- ATTACHED INVERTED-CORNER WINDOW TABS (y=98..132) ----
++ label {
+  left = 74
+  top = 108
+  width = 120
+  height = 18
+  text = "ISO ФАЙЛЫ"
+  color = "#e0f2fe"
+  font = "InterBold Bold 12"
+  align = "left"
+}
+
++ label {
+  left = 722
+  top = 108
+  width = 170
+  height = 18
+  text = "НАВИГАЦИЯ И РЕЖИМ"
+  color = "#e0f2fe"
+  font = "InterBold Bold 12"
+  align = "left"
+}
+
+# ---- LEFT CARD: ISO FILES (card body x=48..672, y=132..724) ----
++ boot_menu {
+  left = 64
+  top = 148
+  width = 592
+  height = 560
+
+  item_font = "InterMed Regular 15"
+  item_color = "#cbd5e1"
+  selected_item_font = "InterSemi Regular 16"
+  selected_item_color = "#ffffff"
+
+  item_height = 30
+  item_padding = 4
+  item_icon_space = 12
+  item_spacing = 16
+  icon_width = 28
+  icon_height = 28
+
+  menu_pixmap_style = "menu_*.png"
+  item_pixmap_style = "item_*.png"
+  selected_item_pixmap_style = "select_*.png"
+
+  scrollbar = true
+  scrollbar_width = 5
+  scrollbar_frame = "sframe_*.png"
+  scrollbar_thumb = "slider_*.png"
+}
+
+# ---- RIGHT CARD: NAVIGATION & MODE (card body x=696..976, y=132..724) ----
+
++ label {
+  left = 716
+  top = 158
+  width = 178
+  height = 20
+  text = "Выбор образа"
+  color = "#f8fafc"
+  font = "InterMed Regular 13"
+  align = "left"
+}
++ label {
+  left = 900
+  top = 159
+  width = 56
+  height = 18
+  text = "↑ / ↓"
+  color = "#7dd3fc"
+  font = "InterBold Bold 12"
+  align = "center"
+}
+
++ label {
+  left = 716
+  top = 202
+  width = 178
+  height = 20
+  text = "Запуск образа"
+  color = "#f8fafc"
+  font = "InterMed Regular 13"
+  align = "left"
+}
++ label {
+  left = 900
+  top = 203
+  width = 56
+  height = 18
+  text = "Enter"
+  color = "#7dd3fc"
+  font = "InterBold Bold 12"
+  align = "center"
+}
+
++ label {
+  left = 716
+  top = 246
+  width = 178
+  height = 20
+  text = "Загрузка в RAM"
+  color = "#cbd5e1"
+  font = "InterMed Regular 13"
+  align = "left"
+}
++ label {
+  left = 900
+  top = 247
+  width = 56
+  height = 18
+  text = "Ctrl+D"
+  color = "#cbd5e1"
+  font = "InterBold Bold 12"
+  align = "center"
+}
+
++ label {
+  left = 716
+  top = 290
+  width = 194
+  height = 20
+  text = "Обзор дисков"
+  color = "#cbd5e1"
+  font = "InterMed Regular 13"
+  align = "left"
+}
++ label {
+  left = 916
+  top = 291
+  width = 40
+  height = 18
+  text = "F2"
+  color = "#cbd5e1"
+  font = "InterBold Bold 12"
+  align = "center"
+}
+
++ label {
+  left = 716
+  top = 334
+  width = 194
+  height = 20
+  text = "Дерево папок"
+  color = "#cbd5e1"
+  font = "InterMed Regular 13"
+  align = "left"
+}
++ label {
+  left = 916
+  top = 335
+  width = 40
+  height = 18
+  text = "F3"
+  color = "#cbd5e1"
+  font = "InterBold Bold 12"
+  align = "center"
+}
+
++ label {
+  left = 716
+  top = 378
+  width = 194
+  height = 20
+  text = "Локальная ОС"
+  color = "#cbd5e1"
+  font = "InterMed Regular 13"
+  align = "left"
+}
++ label {
+  left = 916
+  top = 379
+  width = 40
+  height = 18
+  text = "F4"
+  color = "#cbd5e1"
+  font = "InterBold Bold 12"
+  align = "center"
+}
+
++ label {
+  left = 716
+  top = 422
+  width = 194
+  height = 20
+  text = "Консоль GRUB"
+  color = "#cbd5e1"
+  font = "InterMed Regular 13"
+  align = "left"
+}
++ label {
+  left = 916
+  top = 423
+  width = 40
+  height = 18
+  text = "C"
+  color = "#cbd5e1"
+  font = "InterBold Bold 12"
+  align = "center"
+}
+
++ label {
+  left = 716
+  top = 466
+  width = 194
+  height = 20
+  text = "Языки"
+  color = "#7dd3fc"
+  font = "InterMed Regular 13"
+  align = "left"
+}
++ label {
+  left = 916
+  top = 467
+  width = 40
+  height = 18
+  text = "L"
+  color = "#7dd3fc"
+  font = "InterBold Bold 12"
+  align = "center"
+}
+
+
+# Active Ventoy Menu Language indicator right under `Язык / Тема` (updates LIVE when pressing `L`!)
++ label {
+  left = 716
+  top = 496
+  width = 240
+  height = 16
+  text = "@@VTLANG_LANGUAGE_NAME"
+  color = "#64748b"
+  font = "InterReg Regular 12"
+  align = "left"
+}
+
+# Bottom status section inside "НАВИГАЦИЯ И РЕЖИМ" (below divider y=572)
++ label {
+  left = 716
+  top = 590
+  width = 122
+  height = 18
+  text = "Разрешение"
+  color = "#94a3b8"
+  font = "InterMed Regular 13"
+  align = "left"
+}
+
++ label {
+  left = 838
+  top = 591
+  width = 118
+  height = 18
+  text = "@@gfxmode"
+  color = "#f8fafc"
+  font = "InterBold Bold 12"
+  align = "right"
+}
+
++ label {
+  left = 716
+  top = 626
+  width = 122
+  height = 18
+  text = "Режим BIOS"
+  color = "#94a3b8"
+  font = "InterMed Regular 13"
+  align = "left"
+}
+
++ label {
+  left = 838
+  top = 627
+  width = 118
+  height = 18
+  text = "@@VTOY_BIOS_MODE_STR"
+  color = "#7dd3fc"
+  font = "InterBold Bold 12"
+  align = "right"
+}
