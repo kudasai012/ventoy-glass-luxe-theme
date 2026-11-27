@@ -26,7 +26,6 @@ Minimalist dark frosted-glass bootloader theme for **Ventoy** (`1.1.x+`), engine
    <Флешка Ventoy>/
    └── ventoy/
        ├── ventoy.json
-       ├── ventoy_grub.cfg
        └── theme/
            └── luxe/
                ├── theme.txt
@@ -36,7 +35,7 @@ Minimalist dark frosted-glass bootloader theme for **Ventoy** (`1.1.x+`), engine
    ```
    *(Либо скопируйте папку `ventoy` напрямую из каталога [`ru/`](./ru/) или [`en/`](./en/) этого репозитория).*
 
-> **Если у вас уже есть свой `ventoy.json`** (со своими `menu_alias` и `menu_class`): достаточно скопировать только папку `ventoy/theme/luxe` (и при необходимости `ventoy/ventoy_grub.cfg`), а в вашем `ventoy.json` прописать секции `"theme"` и `"control_*"` по образцу из репозитория.
+> **Если у вас уже есть свой `ventoy.json`** (со своими `menu_alias` и `menu_class`): достаточно скопировать только папку `ventoy/theme/luxe`, а в вашем `ventoy.json` прописать секции `"theme"` и `"control_*"` по образцу из репозитория.
 
 ### Горячие клавиши в меню
 | Клавиша | Действие |
